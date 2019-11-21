@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataField есть корректный снимок 1`] = `
+<div
+  className="DataFieldTest"
+/>
+`;
+
+exports[`DataField есть корректный снимок 2`] = `
+<span>
+  Возраст
+</span>
+`;
+
+exports[`DataField есть корректный снимок 3`] = `
+<span>
+  Пол
+</span>
+`;
+
+exports[`DataField есть корректный снимок 4`] = `
+<span>
+  Длина - 
+   
+</span>
+`;
+
+exports[`DataField есть корректный снимок 5`] = `
+<span>
+  Вес 
+   
+</span>
+`;

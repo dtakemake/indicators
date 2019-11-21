@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import DataField from './components/DataField/'
 import Units from './components/Units'
 
 import { 
@@ -18,17 +19,19 @@ const App = () => {
   const [weightUnit, setWeightUnit] = useState(weightUnits.default)
 
   // данные пользователя
-  //const [genre, setGenre] = useState('m')
-  //const [height, setHeight] = useState(175)
-  //const [weight, setGenre] = useState(90)
-  //const [age, setAge] = useState(18)
+  const [genre, setGenre] = useState('m')
+  const [age, setAge] = useState(18)
+  const [height, setHeight] = useState(175)
+  const [weight, setWeight] = useState(90)
 
   return (
     <Container>
       <Row>
         <Col xs={6}>
-          <p className="text-muted">Длина в { lengthUnits.units[lengthUnit] }</p>
-          <p className="text-muted">Вес в { weightUnits.units[weightUnit] }</p>
+          <DataField.Genre genre={ genre } setGenre={ setGenre } />
+          <DataField.Age age={ age } setAge={ setAge } />
+          <DataField.Length length={ height } setLength={ setHeight } unit={ lengthUnits.units[lengthUnit] } />
+          <DataField.Weight weight={ weight } setWeight={ setWeight } unit={ weightUnits.units[weightUnit] } />
         </Col>
         <Col xl={6} className="p-4">
           <div className="d-flex align-items-center justify-content-end">

@@ -14,10 +14,6 @@ const lengthUnits = {
   }
 }
 
-const units = { weightUnits, lenglengthUnitsth }
-
-export default units
-
 export {
   weightUnits, 
   lengthUnits

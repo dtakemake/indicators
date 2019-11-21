@@ -10,18 +10,24 @@ exports[`App есть корректный снимок 1`] = `
     <div
       className="col-6"
     >
-      <p
-        className="text-muted"
-      >
-        Длина в 
+      <span>
+        Пол
+      </span>
+      <span>
+        Возраст
+      </span>
+      <span>
+        Длина - 
+        175
+         
         см
-      </p>
-      <p
-        className="text-muted"
-      >
-        Вес в 
+      </span>
+      <span>
+        Вес 
+        90
+         
         кг
-      </p>
+      </span>
     </div>
     <div
       className="p-4 col-xl-6"
