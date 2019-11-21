@@ -1,4 +1,4 @@
-const weight = {
+const weightUnits = {
   "default" : "kg",
   "units"  : {
     "kg" : "кг", 
@@ -6,7 +6,7 @@ const weight = {
   }
 }
 
-const length = {
+const lengthUnits = {
   "default" : "sm",
   "units"  : {
     "sm" : "см",
@@ -14,11 +14,11 @@ const length = {
   }
 }
 
-const units = { weight, length }
+const units = { weightUnits, lenglengthUnitsth }
 
 export default units
 
 export {
-  weight, 
-  length
+  weightUnits, 
+  lengthUnits
 }

@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import Units from './components/Units'
 
 import { 
-  length as lengthUnits, 
-  weight as weightUnits 
+  lengthUnits, 
+  weightUnits 
 } from './config/units'
 
 import {
@@ -11,11 +11,6 @@ import {
   Row, 
   Col
 } from 'react-bootstrap'
-
-// const { 
-//   length : lengthUnits, 
-//   weight : weightUnits 
-// } = units
 
 const App = () => {
   // единицы измерения
@@ -32,14 +27,14 @@ const App = () => {
     <Container>
       <Row>
         <Col xs={6}>
-          <p className="text-muted">Длина в { lengthUnits['units'][lengthUnit] }</p>
-          <p className="text-muted">Вес в { weightUnits['units'][weightUnit] }</p>
+          <p className="text-muted">Длина в { lengthUnits.units[lengthUnit] }</p>
+          <p className="text-muted">Вес в { weightUnits.units[weightUnit] }</p>
         </Col>
         <Col xl={6} className="p-4">
           <div className="d-flex align-items-center justify-content-end">
-            <Units units={lengthUnits['units']} unit={lengthUnit} setUnit={setLengthUnit} variant="warning" />
+            <Units units={lengthUnits.units} unit={lengthUnit} setUnit={setLengthUnit} variant="warning" />
             <div className="px-2"></div>
-            <Units units={weightUnits['units']} unit={weightUnit} setUnit={setWeightUnit} variant="info" />
+            <Units units={weightUnits.units} unit={weightUnit} setUnit={setWeightUnit} variant="info" />
           </div>
         </Col>
       </Row>
