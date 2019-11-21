@@ -19,15 +19,47 @@ exports[`DataField есть корректный снимок 3`] = `
 `;
 
 exports[`DataField есть корректный снимок 4`] = `
-<span>
-  Длина - 
-   
-</span>
+<div
+  className="form-group"
+>
+  <label
+    className="font-weight-bold small mb-1 form-label"
+    htmlFor="formTest"
+  >
+    Рост
+  </label>
+  <input
+    className="form-control"
+    id="formTest"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+  <small
+    className="text-muted form-text"
+  />
+</div>
 `;
 
 exports[`DataField есть корректный снимок 5`] = `
-<span>
-  Вес 
-   
-</span>
+<div
+  className="form-group"
+>
+  <label
+    className="font-weight-bold small mb-1 form-label"
+    htmlFor="formTest"
+  >
+    Вес
+  </label>
+  <input
+    className="form-control"
+    id="formTest"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+  <small
+    className="text-muted form-text"
+  />
+</div>
 `;
