@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Units есть корректный снимок 1`] = `
+<div
+  className="btn-group btn-group-sm"
+  role="group"
+>
+  <button
+    className="btn btn-warning"
+    disabled="disabled"
+    type="button"
+  >
+    кг
+  </button>
+  <button
+    className="btn btn-warning"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    фунты
+  </button>
+</div>
+`;
