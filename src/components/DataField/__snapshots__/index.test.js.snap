@@ -7,15 +7,75 @@ exports[`DataField есть корректный снимок 1`] = `
 `;
 
 exports[`DataField есть корректный снимок 2`] = `
-<span>
-  Возраст
-</span>
+<div
+  className="form-group"
+>
+  <label
+    className="font-weight-bold small mb-1 form-label"
+    htmlFor="formTest"
+  >
+    Возраст, 
+    <small
+      className="text-muted mb-1"
+    />
+  </label>
+  <input
+    className="form-control"
+    id="formTest"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+  />
+</div>
 `;
 
 exports[`DataField есть корректный снимок 3`] = `
-<span>
-  Пол
-</span>
+<div
+  className="mb-3"
+>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      disabled={false}
+      id="m"
+      name="genre"
+      onChange={[Function]}
+      type="radio"
+      value="m"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="m"
+      title=""
+    >
+      Мужчина
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      disabled={false}
+      id="w"
+      name="genre"
+      onChange={[Function]}
+      type="radio"
+      value="w"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="w"
+      title=""
+    >
+      Женщина
+    </label>
+  </div>
+</div>
 `;
 
 exports[`DataField есть корректный снимок 4`] = `
@@ -26,7 +86,10 @@ exports[`DataField есть корректный снимок 4`] = `
     className="font-weight-bold small mb-1 form-label"
     htmlFor="formTest"
   >
-    Рост
+    Рост, 
+    <small
+      className="text-muted mb-1"
+    />
   </label>
   <input
     className="form-control"
@@ -34,9 +97,6 @@ exports[`DataField есть корректный снимок 4`] = `
     onChange={[Function]}
     placeholder=""
     type="text"
-  />
-  <small
-    className="text-muted form-text"
   />
 </div>
 `;
@@ -49,7 +109,10 @@ exports[`DataField есть корректный снимок 5`] = `
     className="font-weight-bold small mb-1 form-label"
     htmlFor="formTest"
   >
-    Вес
+    Вес, 
+    <small
+      className="text-muted mb-1"
+    />
   </label>
   <input
     className="form-control"
@@ -57,9 +120,6 @@ exports[`DataField есть корректный снимок 5`] = `
     onChange={[Function]}
     placeholder=""
     type="text"
-  />
-  <small
-    className="text-muted form-text"
   />
 </div>
 `;

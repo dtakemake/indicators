@@ -10,34 +10,51 @@ exports[`App есть корректный снимок 1`] = `
     <div
       className="col-6"
     >
-      <span>
-        Пол
-      </span>
-      <span>
-        Возраст
-      </span>
       <div
-        className="form-group"
+        className="mb-3"
       >
-        <label
-          className="font-weight-bold small mb-1 form-label"
-          htmlFor="formTest"
+        <div
+          className="form-check"
         >
-          Рост
-        </label>
-        <input
-          className="form-control"
-          id="formTest"
-          onChange={[Function]}
-          placeholder=""
-          type="text"
-          value={175}
-        />
-        <small
-          className="text-muted form-text"
+          <input
+            checked={true}
+            className="form-check-input"
+            disabled={false}
+            id="m"
+            name="genre"
+            onChange={[Function]}
+            type="radio"
+            value="m"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="m"
+            title=""
+          >
+            Мужчина
+          </label>
+        </div>
+        <div
+          className="form-check"
         >
-          см
-        </small>
+          <input
+            checked={false}
+            className="form-check-input"
+            disabled={false}
+            id="w"
+            name="genre"
+            onChange={[Function]}
+            type="radio"
+            value="w"
+          />
+          <label
+            className="form-check-label"
+            htmlFor="w"
+            title=""
+          >
+            Женщина
+          </label>
+        </div>
       </div>
       <div
         className="form-group"
@@ -46,7 +63,12 @@ exports[`App есть корректный снимок 1`] = `
           className="font-weight-bold small mb-1 form-label"
           htmlFor="formTest"
         >
-          Вес
+          Возраст, 
+          <small
+            className="text-muted mb-1"
+          >
+            лет
+          </small>
         </label>
         <input
           className="form-control"
@@ -54,14 +76,59 @@ exports[`App есть корректный снимок 1`] = `
           onChange={[Function]}
           placeholder=""
           type="text"
-          value={90}
+          value=""
         />
-        <small
-          className="text-muted form-text"
-        >
-          кг
-        </small>
       </div>
+      <div
+        className="form-group"
+      >
+        <label
+          className="font-weight-bold small mb-1 form-label"
+          htmlFor="formTest"
+        >
+          Рост, 
+          <small
+            className="text-muted mb-1"
+          >
+            см
+          </small>
+        </label>
+        <input
+          className="form-control"
+          id="formTest"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          className="font-weight-bold small mb-1 form-label"
+          htmlFor="formTest"
+        >
+          Вес, 
+          <small
+            className="text-muted mb-1"
+          >
+            кг
+          </small>
+        </label>
+        <input
+          className="form-control"
+          id="formTest"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+      <h3>
+        ИМТ - 
+        0.00
+      </h3>
     </div>
     <div
       className="p-4 col-xl-6"
